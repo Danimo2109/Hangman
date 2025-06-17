@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.word {
+  letter-spacing: 10px;
+  font-size: 24px;
+  margin: 20px auto;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+}
+
+.message {
+  margin: 10px;
+  font-weight: bold;
+}
+
+input {
+  font-size: 40px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  border: 3px solid #007bff;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.wrong-guesses {
+  font-size: 18px;
+  color: red;
+}
+
+.wrong-guesses span {
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+}
+
+.restart-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.restart-btn:hover {
+  background-color: #e53935;
+}

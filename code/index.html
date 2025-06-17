@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Hangman</h1>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <img id="hangmanImage" src="../images/Hangman0.jpg" alt="Hangman" style="width:120px; height:auto; margin-right:30px;">
+    <div>
+      <div class="word" id="displayWord"></div>
+      <input type="text" id="guessInput" maxlength="1" placeholder="Buchstabe">
+      <div>
+        <button onclick="makeGuess()">Raten</button>
+      </div>
+    </div>
+  </div>
+  <p class="message" id="message"></p>
+  <p>Falsche Versuche: <span id="wrongGuesses">0</span>/6</p>
+  <p class="wrong-guesses">Falsche Buchstaben: <span id="wrongLetters"></span></p>
+  <button class="restart-btn" onclick="startNewRound()">Neue Runde</button>
+  <script src="./script.js"></script>
+</body>
+</html>
