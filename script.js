@@ -1,4 +1,4 @@
-// Ein Beispiel von 1000 zufälligen Wörtern
+
 const words = [
   "ABEND", "ABENTEUER", "ABGEORDNET", "ABSTAND", "ACHTUNG", "ADRESSE", "AFRIKA", "AGENT", "AGGRESSIV", "AHORN",
   "ALBATROSS", "ALBUM", "ALGE", "ALPINIST", "AMBULANZ", "AMPEL", "ANALYSE", "ANATOMIE", "ANBINDUNG", "ANNEHMEN",
@@ -31,22 +31,22 @@ function startNewRound() {
 }
 
 function playLosingHorn() {
-  const audio = new Audio("../sounds/losinghorn.mp3");
+  const audio = new Audio("./sounds/losinghorn.mp3");
   audio.play();
 }
 
 function playWrongAnswer() {
-  const audio = new Audio("../sounds/wronganswer.mp3");
+  const audio = new Audio("./sounds/wronganswer.mp3");
   audio.play();
 }
 
 function playGoodResult() {
-  const audio = new Audio("../sounds/goodresult.mp3");
+  const audio = new Audio("./sounds/goodresult.mp3");
   audio.play();
 }
 
 function playCorrectChoice() {
-  const audio = new Audio("../sounds/correctchoice.mp3");
+  const audio = new Audio("./sounds/correctchoice.mp3");
   audio.play();
 }
 
@@ -56,7 +56,7 @@ function updateDisplay() {
     display += guessed.includes(letter) ? letter : "_";
   }
   document.getElementById("displayWord").textContent = display;
-  document.getElementById("hangmanImage").src = `../images/Hangman${wrong}.jpg`;
+  document.getElementById("hangmanImage").src = `./images/Hangman${wrong}.jpg`;
   if (!display.includes("_")) {
     document.getElementById("message").textContent = "Gewonnen!";
     playGoodResult();
