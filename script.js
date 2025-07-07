@@ -226,7 +226,7 @@ function makeGuess() {
         "Verloren! Das Wort war: " + word;
       playLosingHorn();
       const img = document.getElementById("hangmanImage");
-      img.classList.remove("swing"); // reset if needed
+      img.classList.remove("swing"); // reset.    if needed
       void img.offsetWidth; // force reflow for restart
       img.classList.add("swing");
     }
